@@ -1,0 +1,55 @@
+body{
+  font-family: "Montserrat";
+  text-align: center;
+
+}
+h1{
+  font-family: "Montserrat";
+}
+
+h2{
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+
+p{
+  color: #8f8f8f;
+  font-family: 'Sacramento', cursive;
+}
+
+.container-fluid{
+ padding: 3% 7%;
+}
+
+
+.colored-section{
+  background-color: #30e3ca;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.white-section{
+  background-color: #fff;
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.top-content{
+  padding-top: 6%;
+  padding-left: 5%;
+  text-align:left;
+
+}
+
+.title-image{
+  width: 50%;
+  height: 20rem;
+}
+
+.big-heading{
+  font-family: "Montserrat";
+ /*font-weight: 400;*/
+  font-size: 3rem;
+  line-height: 1.5;
+}
