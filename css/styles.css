@@ -1,35 +1,31 @@
-body{
+body {
   font-family: "Montserrat";
   text-align: center;
-
 }
-h1{
+
+h1 {
   font-family: "Montserrat";
 }
 
-h2{
+h2 {
   font-family: "Montserrat";
   font-size: 30px;
 }
 
-p{
+p {
   color: #8f8f8f;
   font-family: 'Sacramento', cursive;
 }
 
-.container-fluid{
- padding: 3% 7%;
-}
-
-
-.colored-section{
+/* Every section which is coloured */
+.colored-section {
   background-color: #30e3ca;
-    color: #fff;
-    font-size: 20px;
+  color: #fff;
+  font-size: 20px;
 }
 
-
-.white-section{
+/* Every section which is white*/
+.white-section {
   background-color: #fff;
   padding: 5% 5%;
   text-align: center;
@@ -37,58 +33,113 @@ p{
   margin-bottom: 5%;
 }
 
-.top-content{
+/* Home section styling */
+.top-content {
   padding-top: 6%;
   padding-left: 5%;
-  text-align:left;
-
+  text-align: left;
 }
 
-.title-image{
+.title-image {
   width: 50%;
   height: 20rem;
 }
 
-.big-heading{
+.big-heading {
   font-family: "Montserrat";
- /*font-weight: 400;*/
+  /*font-weight: 400;*/
   font-size: 3rem;
   line-height: 1.5;
 }
 
-.about-me{
+/* About section Styling */
+.about-me {
   background-color: #30e3ca;
 }
 
-.profile-photo{
-  padding-top: 9%;
-  width: 25%;
-  height:7%;
-  float:left;
-  margin-left: 90px;
+.container-fluid {
+  padding: 4% 8%;
 }
 
-.about-myself{
+.about-info1 {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.profile-photo {
+  width: 25%;
+  height: 7%;
+  float: left;
+}
+
+.about-myself {
   padding-top: 9%;
   padding-bottom: 9%;
 }
 
+.my-info {
+  color: #000;
+  height: 300px;
+  text-align: left;
+  padding-left: 340px;
+  padding-right: 20px;
+}
 
-
-
-.skill-row{
+/* .skill-row {
   width: 50%;
   margin: 100px auto 100px 125px;
   text-align: left;
   padding-bottom: 50px;
-
+} */
+/* .skills {
+  text-align: center;
 }
 
+.skill-heading {
+  padding-bottom: 10%;
+} */
+/*Media Query Breakpoints (If screen is less than 1093px and greater than 901px)*/
+@media(min-width:901px) and (max-width:1093px) {
+  .profile-photo {
+    width: 40%;
+    height: 20%;
+  }
 
-.my-info{
-  padding: 10px;
-  margin-left: 550px;
-  margin-right: 100px;
-  color: #000;
-  text-align: left;
+  .about-info1 {
+    height: 850px;
+    /* padding-bottom: 500px; */
+  }
+}
+
+/*Media Query Breakpoints (If screen is less than 900px)*/
+@media(max-width:900px) {
+  .profile-photo {
+    width: 35%;
+    height: 15%;
+    float: none;
+  }
+
+  .my-info {
+    color: #000;
+    height: 300px;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .about-info1 {
+    background-color: #30e3ca;
+    color: #fff;
+    font-size: 15px;
+    height: 700px;
+  }
+
+  .about-heading {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
 }
