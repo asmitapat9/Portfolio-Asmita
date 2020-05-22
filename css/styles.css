@@ -33,6 +33,8 @@ p{
   background-color: #fff;
   padding: 5% 5%;
   text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
 }
 
 .top-content{
@@ -52,4 +54,41 @@ p{
  /*font-weight: 400;*/
   font-size: 3rem;
   line-height: 1.5;
+}
+
+.about-me{
+  background-color: #30e3ca;
+}
+
+.profile-photo{
+  padding-top: 9%;
+  width: 25%;
+  height:7%;
+  float:left;
+  margin-left: 90px;
+}
+
+.about-myself{
+  padding-top: 9%;
+  padding-bottom: 9%;
+}
+
+
+
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px 125px;
+  text-align: left;
+  padding-bottom: 50px;
+
+}
+
+
+.my-info{
+  padding: 10px;
+  margin-left: 550px;
+  margin-right: 100px;
+  color: #000;
+  text-align: left;
 }
