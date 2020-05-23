@@ -85,19 +85,7 @@ p {
   padding-right: 20px;
 }
 
-/* .skill-row {
-  width: 50%;
-  margin: 100px auto 100px 125px;
-  text-align: left;
-  padding-bottom: 50px;
-} */
-/* .skills {
-  text-align: center;
-}
 
-.skill-heading {
-  padding-bottom: 10%;
-} */
 /*Media Query Breakpoints (If screen is less than 1093px and greater than 901px)*/
 @media(min-width:901px) and (max-width:1093px) {
   .profile-photo {
@@ -142,4 +130,25 @@ p {
   h5 {
     font-size: 20px;
   }
+}
+
+
+
+/* Skill-section */
+.progress {
+  vertical-align: baseline; }
+
+.skill-section{
+  padding: 6rem 0;
+  position:relative;
+}
+
+.progress-wrap{
+  margin-bottom: 40px;
+  width:100%;
+}
+
+.progress-wrap h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
