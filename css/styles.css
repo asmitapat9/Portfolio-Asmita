@@ -13,8 +13,10 @@ h2 {
 }
 
 p {
-  color: #8f8f8f;
-  font-family: 'Sacramento', cursive;
+  /* color: #8f8f8f; */
+  color: #000;
+  /* font-family: 'Sacramento', cursive; */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Every section which is coloured */
@@ -70,6 +72,7 @@ p {
   width: 25%;
   height: 7%;
   float: left;
+  border: 2px solid #000;
 }
 
 .about-myself {
@@ -85,6 +88,56 @@ p {
   padding-right: 20px;
 }
 
+/* Skill-section */
+.progress {
+  vertical-align: baseline;
+}
+
+.skill-section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.progress-wrap {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.skill-content {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/*Project-Section */
+.project-section {
+  padding: 2% 5%;
+  color: #000;
+}
+
+.project-heading {
+  color: #fff;
+}
+
+.carousel-item {
+  padding: 20px 15%;
+}
+
+.muddy {
+  width: 80%;
+  margin: 20px;
+  border: 2px solid #000;
+}
+
+.file-enc {
+  height: 350px;
+  width: 75%;
+  margin: 20px;
+  border: 2px solid #000;
+}
+
+.project-text {
+  line-height: 1.5;
+}
 
 /*Media Query Breakpoints (If screen is less than 1093px and greater than 901px)*/
 @media(min-width:901px) and (max-width:1093px) {
@@ -130,25 +183,22 @@ p {
   h5 {
     font-size: 20px;
   }
+
+  .file-enc {
+    height: 200px;
+    width: 400px;
+  }
 }
 
+/*Media Query Breakpoints (If screen is less than 670px and greater than 300px)*/
+@media(min-width:300px) and (max-width:670px) {
+  .file-enc {
+    height: 150px;
+    width: 200px;
+  }
 
-
-/* Skill-section */
-.progress {
-  vertical-align: baseline; }
-
-.skill-section{
-  padding: 6rem 0;
-  position:relative;
-}
-
-.progress-wrap{
-  margin-bottom: 40px;
-  width:100%;
-}
-
-.progress-wrap h3 {
-  font-size: 25px;
-  margin-bottom: 10px;
+  .muddy {
+    height: 120px;
+    width: 200px;
+  }
 }
