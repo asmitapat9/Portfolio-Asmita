@@ -19,6 +19,10 @@ p {
   font-family: 'Ubuntu', sans-serif;
 }
 
+h6{
+  padding-bottom: 10px;
+}
+
 /* Every section which is coloured */
 .colored-section {
   background-color: #30e3ca;
@@ -88,7 +92,7 @@ p {
   padding-right: 20px;
 }
 
-/* Skill-section */
+/* Skill-section styling */
 .progress {
   vertical-align: baseline;
 }
@@ -108,7 +112,7 @@ p {
   margin-bottom: 10px;
 }
 
-/*Project-Section */
+/*Project-Section Styling*/
 .project-section {
   padding: 2% 5%;
   color: #000;
@@ -129,8 +133,8 @@ p {
 }
 
 .file-enc {
-  height: 350px;
-  width: 75%;
+  height: 300px;
+  width: 70%;
   margin: 20px;
   border: 2px solid #000;
 }
@@ -138,6 +142,36 @@ p {
 .project-text {
   line-height: 1.5;
 }
+
+/* Contact-Section styling */
+.contacts-section{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.form-color{
+  background-color: #e5e5e5;
+}
+
+.form-text{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* footer-section styling */
+.copyright{
+  background-color:#2fc4b2;
+}
+
+.copyright-link{
+  color: #000;
+}
+
+.copyright-icons{
+  height: 150px;
+}
+
+
+
 
 /*Media Query Breakpoints (If screen is less than 1093px and greater than 901px)*/
 @media(min-width:901px) and (max-width:1093px) {

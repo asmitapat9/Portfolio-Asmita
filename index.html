@@ -13,12 +13,14 @@
 
   <!--CSS Stylesheets-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/styles.css">
 
   <!--Font Awesome-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
   <!--Bootstrap Scripts -->
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -41,16 +43,16 @@
               <a class="nav-link" href="#cta">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">About</a>
+              <a class="nav-link" href="#about-section">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Skills</a>
+              <a class="nav-link" href="#skills-section">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Projects</a>
+              <a class="nav-link" href="#project-section1">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Contact</a>
+              <a class="nav-link" href="#contact-section">Contact</a>
             </li>
           </ul>
         </div>
@@ -74,13 +76,13 @@
 
 
   <!-- About Section -->
-  <section class="colored-section about-info1">
+  <section class="colored-section about-info1" id="about-section">
     <div class="container-fluid ">
       <img class="profile-photo" src="images/myphoto1.jpg" alt="profile-photo" />
       <h5>Welcome</h5>
       <h2 class="about-heading">About Me</h2>
       <p class="my-info">
-        I am so glad that you all are here. I am Asmita Pathare and currently pursuing my Btech in Computer Science
+        I am so glad that you all are here. I am Asmita Pathare and currently pursuing my B.Tech in Computer Science
         from MIT Academy of engineering, Pune. I am well familiar with the concepts of HTML, CSS, Bootstrap, JavaScript, jQuery,
         Node.js, Express and C++ programming language. I am a Cyber Security freak and have knowledge of ethical hacking. Also
         Databases such as MySql and MongoDB are familiar to me. I've always preferred to work in team and find that
@@ -167,7 +169,7 @@
 
 
   <!-- Project-Section -->
-  <section class="colored-section project-section">
+  <section class="colored-section project-section" id="project-section1">
     <h2 class="project-heading">Projects</h2>
     <div id="carouselExampleControls" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
@@ -194,8 +196,83 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
+</section>
 
-  </section>
+
+<!-- Contact-Section -->
+<section class="contacts-section" id="contact-section">
+<h2>Get in touch!!</h2>
+<h6>If have any doubt, let me know!</h6>
+<div class="col-md-4 offset-md-4">
+<form class="form-text" action="" method="post">
+  <div class="form-group">
+    <input class="form-control form-color" type="text" name="postTitle" placeholder="Name" autocomplete="off">
+  </div>
+    <div class="form-group">
+    <input class="form-control form-color" type="email" name="postTitle" placeholder="Email" autocomplete="off">
+    </div>
+      <div class="form-group">
+    <input class="form-control form-color" type="text" name="postTitle" placeholder="Subject" autocomplete="off">
+      </div>
+      <div class="form-group">
+    <textarea  class="form-control form-color" name="postBody" placeholder="Message" rows="8" cols="80"></textarea>
+</div>
+<div class="form-group">
+    <button class="btn btn-primary" type="submit" name="button">Contact</button>
+  </div>
+</form>
+</div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small darken-3 colored-section">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5 copyright-icons">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/people/Asmita-Pathare/100009131187869">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic" href="mailto:asmitapat9@gmail.com">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/in/asmita-pathare-640b72188/">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/asmitapat9/">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 copyright">© 2020 Copyright:
+    <a class="copyright-link" href="mailto:asmitapat9@gmail.com">asmitapat9</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 
