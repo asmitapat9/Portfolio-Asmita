@@ -172,6 +172,24 @@ p {
 
 
 
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* Modal-section styling */
+.mod{
+  padding:4%;
+}
+
+.mod1{
+  padding: 3%;
+}
+
+
 
 /*Media Query Breakpoints (If screen is less than 1093px and greater than 901px)*/
 @media(min-width:901px) and (max-width:1093px) {
@@ -186,7 +204,7 @@ p {
   }
 }
 
-
+/*Media Query Breakpoints (If screen is less than 1093px and greater than 940px)*/
 @media(min-width:940px) and (max-width:1093px){
   .my-info {
     padding-left: 400px;

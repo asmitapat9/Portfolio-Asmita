@@ -7,6 +7,9 @@
   <title>Portfolio-Asmita</title>
   <link rel="icon" href="favicon.ico">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+
   <!--Google Fonts-->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -19,15 +22,52 @@
   <!--Font Awesome-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-  <!--Bootstrap Scripts -->
 
+  <!--Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+
+
 </head>
 
 <body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title col-12 text-center" id="exampleModalLongTitle">Contact!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form id="contactForm" name="contact" role="form">
+          <div class="modal-body">
+            <div class="mod1">
+              <input id="name1" class="form-control form-color mod" type="text" name="name" placeholder="Name" autocomplete="off">
+            </div>
+            <div class="form-group mod1">
+              <input id="email1" class="form-control form-color mod" type="email" name="email" placeholder="Email" autocomplete="off">
+            </div>
+            <div class="form-group mod1">
+              <input id="number1" class="form-control form-color mod" type="text" name="number" placeholder="Mobile Number" autocomplete="off">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="submit" class="btn btn-primary mod-button" id="submit">Send Message</button> -->
+            <input type="submit" class="btn btn-success" id="submit">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!-- Navigation Bar -->
   <section class="colored-section">
@@ -196,87 +236,87 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
-</section>
+  </section>
 
 
-<!-- Contact-Section -->
-<section class="contacts-section" id="contact-section">
-<h2>Get in touch!!</h2>
-<h6>If have any doubt, let me know!</h6>
-<div class="col-md-4 offset-md-4">
-<form class="form-text" action="" method="post">
-  <div class="form-group">
-    <input class="form-control form-color" type="text" name="postTitle" placeholder="Name" autocomplete="off">
-  </div>
-    <div class="form-group">
-    <input class="form-control form-color" type="email" name="postTitle" placeholder="Email" autocomplete="off">
-    </div>
-      <div class="form-group">
-    <input class="form-control form-color" type="text" name="postTitle" placeholder="Subject" autocomplete="off">
-      </div>
-      <div class="form-group">
-    <textarea  class="form-control form-color" name="postBody" placeholder="Message" rows="8" cols="80"></textarea>
-</div>
-<div class="form-group">
-    <button class="btn btn-primary" type="submit" name="button">Contact</button>
-  </div>
-</form>
-</div>
-</section>
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small darken-3 colored-section">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-5 copyright-icons">
-        <div class="mb-5 flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic" href="https://www.facebook.com/people/Asmita-Pathare/100009131187869">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic" href="mailto:asmitapat9@gmail.com">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic" href="https://www.linkedin.com/in/asmita-pathare-640b72188/">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic" href="https://www.instagram.com/asmitapat9/">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
+  <!-- Contact-Section -->
+  <section class="contacts-section" id="contact-section">
+    <h2>Get in touch!!</h2>
+    <h6>If have any doubt, let me know!</h6>
+    <div class="col-md-4 offset-md-4">
+      <form id="basic-form" class="form-text" action="" method="post">
+        <div class="form-group">
+          <input id="name" class="form-control form-color" type="text" name="name" placeholder="Name" autocomplete="off">
         </div>
+        <div class="form-group">
+          <input id="email" class="form-control form-color" type="email" name="email" placeholder="Email" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <input id="subject" class="form-control form-color" type="text" name="subject" placeholder="Subject" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <textarea id="message" class="form-control form-color" name="message" placeholder="Message" rows="8" cols="80"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary submit" type="submit" name="button" id="down-contact">Contact</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small darken-3 colored-section">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5 copyright-icons">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic" href="https://www.facebook.com/people/Asmita-Pathare/100009131187869">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic" href="mailto:asmitapat9@gmail.com">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic" href="https://www.linkedin.com/in/asmita-pathare-640b72188/">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic" href="https://www.instagram.com/asmitapat9/">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
       </div>
-      <!-- Grid column -->
+      <!-- Grid row-->
 
     </div>
-    <!-- Grid row-->
+    <!-- Footer Elements -->
 
-  </div>
-  <!-- Footer Elements -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 copyright">© 2020 Copyright:
+      <a class="copyright-link" href="mailto:asmitapat9@gmail.com">asmitapat9</a>
+    </div>
+    <!-- Copyright -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 copyright">© 2020 Copyright:
-    <a class="copyright-link" href="mailto:asmitapat9@gmail.com">asmitapat9</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+  </footer>
+  <!-- Footer -->
 
 
-
-
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script> -->
 </body>
 
 </html>
