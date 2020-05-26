@@ -1,13 +1,22 @@
-
 // Modal-Section
 // Loading Modal
 $(function() {
-    $("#myModal").modal();
+  $("#myModal").modal();
 });
 
+//  $(document).ready(function(){
+// 	$("#contactForm").submit(function(event){
+//     swal("Thank You for responding!", "We will get in touch with you as soon as possible!!", "success");
+// 	});
+// });
 
-$(document).ready(function(){
-	$("#contactForm").submit(function(event){
-     alert("Thank You for responding. We will get in touch with you as soon as possible!!");
-	});
+// Modal-submit
+function myFunction() {
+  swal("Thank You for responding!", "We will get in touch with you as soon as possible!!", "success");
+}
+
+
+// Contact-Submission
+$("#basic-form").click(function() {
+  form.submit();
 });
