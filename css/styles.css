@@ -19,15 +19,16 @@ p {
   font-family: 'Ubuntu', sans-serif;
 }
 
-h1:hover{
+h1:hover {
   color: red;
 }
 
-h2:hover{
+h2:hover {
   color: red;
 }
 
-/* Every section which is coloured */
+/* ----------------------------------Different section colours-------------------------------- */
+/*Every section which is coloured */
 .colored-section {
   background-color: #30e3ca;
   color: #fff;
@@ -43,27 +44,25 @@ h2:hover{
   margin-bottom: 5%;
 }
 
-/* Modal-section styling */
-.mod{
-  padding:4%;
+/*----------------------------- Modal-section styling--------------------------------------- */
+.mod {
+  padding: 4%;
 }
 
-.mod1{
+.mod1 {
   padding: 3%;
 }
 
-
-/* Navbar-styling */
+/*-------------------------------- Navbar-styling--------------------------------------------- */
 .navbar-light .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
-
-/* Home section styling */
+/*------------------------------- Home section styling--------------------------------------------- */
 .top-content {
   padding-top: 6%;
   padding-left: 5%;
@@ -82,7 +81,7 @@ h2:hover{
   line-height: 1.5;
 }
 
-/* About section Styling */
+/*-------------------------------------- About section Styling---------------------------------------- */
 .about-me {
   background-color: #30e3ca;
 }
@@ -116,7 +115,7 @@ h2:hover{
   padding-right: 20px;
 }
 
-/* Skill-section styling */
+/*---------------------------------- Skill-section styling------------------------------------ */
 .progress {
   vertical-align: baseline;
 }
@@ -136,12 +135,12 @@ h2:hover{
   margin-bottom: 10px;
 }
 
-.skill-container{
+.skill-container {
   padding-left: 100px;
   padding-right: 100px;
 }
 
-/*Project-Section Styling*/
+/*------------------------------Project-Section Styling-------------------------------------*/
 .project-section {
   padding: 2% 5%;
   color: #000;
@@ -172,41 +171,58 @@ h2:hover{
   line-height: 1.5;
 }
 
-/* Contact-Section styling */
-.contacts-section{
+/*------------------------------------ Contact-Section styling---------------------------------------- */
+.contacts-section {
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-.form-color{
+.form-color {
   background-color: #e5e5e5;
 }
 
-.form-text{
-    font-family: 'Ubuntu', sans-serif;
+.form-text {
+  font-family: 'Ubuntu', sans-serif;
 }
 
-/* footer-section styling */
-.copyright{
-  background-color:#2fc4b2;
+/* .submit{
+border-radius: 16px;
+} */
+.submit:hover {
+  background-color: #91bd3a;
+  border-color: #000;
+  font-size: 22px;
 }
 
-.copyright-link{
+/*------------------------------ footer-section styling-------------------------------------------- */
+.copyright {
+  background-color: #2fc4b2;
+}
+
+.copyright-link {
   color: #000;
 }
 
-.copyright-icons{
+.copyright-icons {
   height: 150px;
 }
 
-
-/* success-page styling */
-.jumbotron{
-background-color: #30e3ca;
+/*---------------------------success-page styling---------------------------------------------------- */
+.jumbotron {
+  background-color: #30e3ca;
 }
 
+.suc-button:hover {
+  background-color: #12947f;
+  color: #000;
+  font-size: 25px;
+}
 
+.suc-button {
+  border-radius: 16px;
+}
 
+/*-----------------------------Media Query Breakpoints for various screen sizes------------------------------------------------------*/
 /*Media Query Breakpoints (If screen is less than 1093px and greater than 901px)*/
 @media(min-width:901px) and (max-width:1093px) {
   .profile-photo {
@@ -221,7 +237,7 @@ background-color: #30e3ca;
 }
 
 /*Media Query Breakpoints (If screen is less than 1093px and greater than 940px)*/
-@media(min-width:940px) and (max-width:1093px){
+@media(min-width:940px) and (max-width:1093px) {
   .my-info {
     padding-left: 400px;
   }
@@ -242,13 +258,14 @@ background-color: #30e3ca;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+    font-size: 16px;
   }
 
   .about-info1 {
     background-color: #30e3ca;
     color: #fff;
     font-size: 15px;
-    height: 700px;
+    height: 730px;
   }
 
   .about-heading {
@@ -263,6 +280,10 @@ background-color: #30e3ca;
     height: 200px;
     width: 400px;
   }
+
+  .welcome-heading {
+    padding-top: 12px;
+  }
 }
 
 /*Media Query Breakpoints (If screen is less than 670px and greater than 300px)*/
@@ -272,8 +293,99 @@ background-color: #30e3ca;
     width: 200px;
   }
 
+  .profile-photo {
+    width: 37%;
+    height: 17%;
+    float: none;
+  }
+
   .muddy {
     height: 120px;
     width: 200px;
+  }
+
+  .skill-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .title-image {
+    width: 40%;
+    height: 15rem;
+  }
+
+  .skill-section {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    position: relative;
+  }
+
+  .contacts-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .home-hello {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    font-size: 30px;
+  }
+
+  .about-info1 {
+    background-color: #30e3ca;
+    color: #fff;
+    font-size: 15px;
+    height: 800px;
+  }
+}
+
+/*Media Query Breakpoints (If screen is less than 300px)*/
+@media(max-width:300px) {
+  .about-info1 {
+    background-color: #30e3ca;
+    color: #fff;
+    font-size: 15px;
+    height: 950px;
+  }
+
+  .title-image {
+    width: 40%;
+    height: 12rem;
+  }
+
+  .profile-photo {
+    width: 40%;
+    height: 20%;
+    float: none;
+  }
+
+  .skill-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .home-hello {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    font-size: 30px;
+  }
+
+  .skill-section {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .contacts-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .project-heading {
+    padding-top: 20px;
   }
 }

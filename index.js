@@ -1,14 +1,12 @@
 // Modal-Section
-// Loading Modal
-$(function() {
-  $("#myModal").modal();
-});
-
-//  $(document).ready(function(){
-// 	$("#contactForm").submit(function(event){
-//     swal("Thank You for responding!", "We will get in touch with you as soon as possible!!", "success");
-// 	});
+// Loading Modal after a delay of 3seconds.
+setTimeout(function() {
+    $('#myModal').modal();
+}, 3000);
+// $(function() {
+//   $("#myModal").modal();
 // });
+
 
 // Modal-submit
 function myFunction() {
@@ -20,3 +18,8 @@ function myFunction() {
 $("#basic-form").click(function() {
   form.submit();
 });
+
+//Redirecting to index.html page after button click on success.html page
+function pageRedirect() {
+      window.location.href = "index.html";
+}
